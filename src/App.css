@@ -1,0 +1,168 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #2c3e50, #3498db);
+  min-height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+button.action-button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+button.action-button:hover {
+  background-color: #3498db;
+  transform: scale(1.1);
+}
+
+.video-feed {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.tips-list li {
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+blockquote {
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+blockquote em {
+  color: #f1c40f;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonPop {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+/* Additions to App.css */
+
+.fun-facts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fun-facts li {
+  margin: 8px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.fun-facts li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.use-cases ul {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.vision {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+/* CSS (App.css) */
+
+/* Styling for the motivational quote */
+.motivational-quote blockquote {
+  font-style: italic;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-left: 4px solid #4caf50;
+  border-radius: 8px;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Interactive section styling */
+.interactive-section, .fun-fact-section {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  animation: fadeInUp 1s ease;
+}
+
+/* Hover effect for list items */
+.tips-list li {
+  margin: 12px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.tips-list li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
